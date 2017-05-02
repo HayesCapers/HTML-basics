@@ -8,10 +8,10 @@
 		/* Inside her is CSS */
 
 		#full-page {
-			background-color: #006;
+			background-color: orange;
 		}
 
-		.gallery-wrapper{
+		#gallery-wrapper{
 			text-align: center;
 		}
 
@@ -21,14 +21,14 @@
 
 		#top-section h1{
 			font-family: Impact, Charcoal, sans-serif;
-			border: 10px solid #06c;
-			color: #06c;
+			border: 10px solid hotpink;
+			color: limegreen;
 		}
 
 		#middle-section img{
 			display: block;
 			width: 50%;
-			border: 4px solid #06c;
+			border: 4px solid yellowgreen;
 			margin: 7px;
 
 			/* these do the same thing but the above just consolidates them */
@@ -48,11 +48,18 @@
 
 		#bottom-section img{
 			width: 95%;
-			border: 10px solid #06c;
+			border: 10px solid blueviolet;
 		}
 
 		#bottom-section {
 			width: 75%;
+		}
+
+		.caption{
+			font-size: 20px;
+			font-weight: bold;
+			text-shadow: 10px;
+			color: red;
 		}
 
 	</style>
@@ -60,7 +67,7 @@
 </head>
 <body>
 
-	<div class="gallery-wrapper">
+	<div id="gallery-wrapper">
 		<!-- Top -->
 		<div id="top-section">
 			<h1>
@@ -69,11 +76,17 @@
 		</div>
 		<!-- middle -->
 		<div id="middle-section" class="all_images">
-				<img src="./ga_pics/arabia_mnt.jpg" onclick="bigPic.src = this.src" />
-				<img src="./ga_pics/callaway_gardens.jpg" onclick="bigPic.src = this.src" />
-				<img src="./ga_pics/Etowah_Indian_Mounds.jpg" onclick="bigPic.src = this.src" />
-				<img src="./ga_pics/prov_state_canyon.jpg" onclick="bigPic.src = this.src" />
-				<img src="./ga_pics/wormsloe.jpg" onclick="bigPic.src = this.src" />
+			<div class="caption one">
+				this is a caption
+			</div>
+			<div class="caption two">
+				this is also a caption				
+			</div>
+			<img src="./ga_pics/arabia_mnt.jpg" onclick="bigPic.src = this.src" />
+			<img src="./ga_pics/callaway_gardens.jpg" onclick="bigPic.src = this.src" />
+			<img src="./ga_pics/Etowah_Indian_Mounds.jpg" onclick="bigPic.src = this.src"/>
+			<img src="./ga_pics/prov_state_canyon.jpg" onclick="bigPic.src = this.src" />
+			<img src="./ga_pics/wormsloe.jpg" onclick="bigPic.src = this.src" />
 		</div>
 		<!-- bottom -->
 		<div id="bottom-section" class="all-images">
@@ -81,5 +94,5 @@
 		</div>
 	</div>	
 
-</body>
+</body> 
 </html>
