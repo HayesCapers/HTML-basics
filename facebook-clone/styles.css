@@ -222,12 +222,19 @@
 	margin-bottom: 15px;
 	border: 1px solid #cacaca;
 	overflow: hidden;
+	border-radius: 2px
 }
 
 .share-content img{
 	float: left;
 	margin-left: 5px;
 	margin-top: 5px
+}
+
+.share-description{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
 
